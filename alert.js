@@ -1,3 +1,3 @@
 function alertOne() {
-     alertNumber("one");
+     console.log("lala");
 }
