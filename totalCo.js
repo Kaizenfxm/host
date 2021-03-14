@@ -1,3 +1,4 @@
+<script>
 function totalCo( obj ) {
   var sum = 0;
   for( var el in obj ) {
@@ -7,3 +8,4 @@ function totalCo( obj ) {
   }
   return sum;
 }
+</script>
