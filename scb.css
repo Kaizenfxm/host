@@ -1,7 +1,7 @@
 
 .header__container  .btn{
 border: 3px solid #29a24e !important;
-padding: 8px 16px;
+padding: 8px 16px !important;
 border-radius: 30px !important;
 transition: 200ms !important;
 opacity: 0.9 !important;
@@ -10,7 +10,7 @@ font-size: 90% !important;
 }
 
 .header__container .btn:hover{
-transform: scale(1.1 , 1.1);
-transition: 200ms;
-opacity: 1;
+transform: scale(1.1 , 1.1) !important;
+transition: 200ms !important;
+opacity: 1 !important;
 }
