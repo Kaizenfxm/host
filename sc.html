@@ -1,0 +1,27 @@
+<style>
+.header__container  .btn{
+border: 3px solid #29a24e !important;
+padding: 9px 20px !important;
+border-radius: 30px !important;
+transition: 200ms !important;
+opacity: 0.9 !important;
+background-color: #ffffff00 !important;
+}
+.header__container .btn:hover{
+transform: scale(1.1 , 1.1);
+transition: 200ms;
+opacity: 1;
+}
+</style>
+<script>
+function countCart(obj) {
+    var count = 0;
+
+    for(var prop in obj) {
+        if(obj.hasOwnProperty(prop))
+            ++count;
+    }
+
+    return count;
+}
+</script>
