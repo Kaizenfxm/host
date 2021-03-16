@@ -1,0 +1,303 @@
+@media (max-width: 767px) {
+    .menu {
+      visibility: hidden;
+      display:none;
+    }
+  }
+.menu {
+   -webkit-filter: url("#shadowed-goo");
+   filter: url("#shadowed-goo");
+   margin-left: -40px;
+   margin-top: 20px;
+   z-index: 10000;  
+}
+
+.menu-item, .menu-open-button {
+  background: #29a24e;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  margin-left: -40px;
+  position: absolute;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 60px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform ease-out 200ms;
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+}
+
+.menu-open {
+  display: none;
+}
+
+.hamburgers {
+  width: 25px;
+  height: 4px;
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12.5px;
+  margin-top: -1.5px;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+  z-index: 10001;
+}
+.ball {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    background: white;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -5px;
+    -webkit-transition: -webkit-transform 200ms;
+    transition: -webkit-transform 200ms;
+    transition: transform 200ms;
+    transition: transform 200ms, -webkit-transform 200ms;
+    z-index: 10001;
+}
+
+.ball-1 {
+	-webkit-transform: translate3d(18px, 13px, 0);
+			transform: translate3d(18px, 13px, 0); 
+}
+.ball-2 {
+	-webkit-transform: translate3d(-5px, 0, 0);
+			transform: translate3d(-5px, 0, 0);
+}
+.ball-3 {
+	-webkit-transform: translate3d(18px, -13px, 0);
+			transform: translate3d(18px, -13px, 0); 
+}
+.menu-open:checked + .menu-open-button .ball-1 {
+  -webkit-transform: translate3d(0, 0, 0) scale(0, 0);
+          transform: translate3d(0, 0, 0) scale(0, 0);
+
+}
+.menu-open:checked + .menu-open-button .ball-2 {
+  -webkit-transform: translate3d(0, 0, 0) scale(0, 0);
+          transform: translate3d(0, 0, 0) scale(0, 0);
+
+}
+.menu-open:checked + .menu-open-button .ball-3 {
+  -webkit-transform: translate3d(0, 0, 0) scale(0, 0);
+          transform: translate3d(0, 0, 0) scale(0, 0);
+
+}
+
+.hamburger-1 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); 
+  -webkit-transform: translate3d(-5px, 6px, 0) rotate(30deg);
+          transform: translate3d(-5px, 6px, 0) rotate(30deg);
+}
+.hamburger-3 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(-5px, -6px, 0) rotate(-30deg);
+          transform: translate3d(-5px, -6px, 0) rotate(-30deg);
+}
+
+.menu-open:checked + .menu-open-button .hamburger-1 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+          transform: translate3d(0, 0, 0) rotate(45deg);
+}
+
+.menu-open:checked + .menu-open-button .hamburger-3 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+          transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+
+.menu {
+  position: fixed;
+  bottom: 50px;
+  left: 96.2%;
+  margin-left: -80px;
+  padding-top: 20px;
+  padding-left: 80px;
+  width: 650px;
+  height: 150px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: left;
+  z-index: 10000;
+}
+
+.menu-item:hover {
+  background: #29a24e;
+  color: white;
+}
+
+.menu-item:nth-child(3) {
+/* Facebook */
+  -webkit-transition-duration: 180ms;
+          transition-duration: 180ms;
+}
+.menu-item:nth-child(3):hover {
+	background: #3b5998
+}
+.menu-item:nth-child(4) { 
+/* Instagram */
+  -webkit-transition-duration: 180ms;
+          transition-duration: 180ms;
+}
+.menu-item:nth-child(4):hover {
+	background-image: linear-gradient(-135deg, #515bd4 , #8134af, 		#dd2a7b, #feda77, #f58529);
+}
+.menu-item:nth-child(5) {
+/* Youtube */
+  -webkit-transition-duration: 180ms;
+          transition-duration: 180ms;
+}
+.menu-item:nth-child(5):hover {
+	background: red
+}
+.menu-item:nth-child(6) {
+/* Telegram */
+  -webkit-transition-duration: 180ms;
+          transition-duration: 180ms;
+}
+.menu-item:nth-child(6):hover {
+	background: #0088cc
+}
+.menu-item:nth-child(7) {
+/* Spotify*/
+  -webkit-transition-duration: 180ms;
+          transition-duration: 180ms;
+}
+.menu-item:nth-child(7):hover {
+	background: #1ed760
+}
+.menu-item:nth-child(8) {
+/* Contacto */
+  -webkit-transition-duration: 180ms;
+          transition-duration: 180ms;
+}
+.menu-item:nth-child(8):hover {
+	background: #b6c8df
+}
+
+.menu-open-button {
+  z-index: 2;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+          transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: pointer;
+}
+
+.menu-open-button:hover {
+  -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+          transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked + .menu-open-button {
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+          transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+
+.menu-open:checked ~ .menu-item {
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.menu-open:checked ~ .menu-item:nth-child(3) {
+  -webkit-transition-duration: 170ms;
+          transition-duration: 170ms;
+  -webkit-transform: translate3d(-60px, 0, 0);
+          transform: translate3d(-60px, 0, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(4) {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transform: translate3d(-120px, 0, 0);
+          transform: translate3d(-120px, 0, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(5) {
+  -webkit-transition-duration: 330ms;
+          transition-duration: 330ms;
+  -webkit-transform: translate3d(-180px, 0, 0);
+          transform: translate3d(-180px, 0, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(6) {
+  -webkit-transition-duration: 410ms;
+          transition-duration: 410ms;
+  -webkit-transform: translate3d(-240px, 0, 0);
+          transform: translate3d(-240px, 0, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(7) {
+  -webkit-transition-duration: 490ms;
+          transition-duration: 490ms;
+  -webkit-transform: translate3d(-300px, 0, 0);
+          transform: translate3d(-300px, 0, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(8) {
+  -webkit-transition-duration: 570ms;
+          transition-duration: 570ms;
+  -webkit-transform: translate3d(-360px, 0, 0);
+          transform: translate3d(-360px, 0, 0);
+}
+</style>
+
+<nav class="menu">
+  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+  <label class="menu-open-button" for="menu-open">
+    <span class="hamburgers hamburger-1"></span>
+    <span class="hamburgers hamburger-3"></span>
+    <span class="ball ball-1"></span>
+    <span class="ball ball-2"></span> 
+    <span class="ball ball-3"></span> 
+  </label>
+  
+  <a href="https://www.facebook.com/Kaizen-Fx-Method-521153898420322" class="menu-item" target="_blank" rel="noopener noreferrer"> <i class="fab fa-facebook-f"></i> </a>
+  <a href="https://www.instagram.com/kaizenfxm" class="menu-item" target="_blank" rel="noopener noreferrer"> <i class="fab fa-instagram"></i> </a>
+  <a href="https://www.youtube.com/user/jimmypage154" class="menu-item" target="_blank" rel="noopener noreferrer"> <i class="fab fa-youtube"></i> </a>
+  <a href="https://www.t.me/kaizenfxm" class="menu-item"> <i class="fab fa-telegram-plane"></i> </a>
+  <a href="https://open.spotify.com/show/5NJzmSf2ZiwrJIx67vqpao" class="menu-item" target="_blank" rel="noopener noreferrer"> <i class="fab fa-spotify"></i> </a>
+ <!-- <a href="https://www.kaizenfxm.com/contacto" class="menu-item" target="_blank" rel="noopener noreferrer"> <i class="fa fa-envelope"></i> </a>
+  <a href="#" class="menu-item" target="_blank" rel="noopener noreferrer"> <i class="fa fa-envelope"></i> </a>  -->
+
+</nav>
+
+
+<!-- filters -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="shadowed-goo">
+          
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+          <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+          <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+          <feComposite in2="shadow" in="goo" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+      <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+    </defs>
+</svg>
+
+</div>
