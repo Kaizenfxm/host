@@ -14,7 +14,7 @@ transform: scale(1.1 , 1.1) !important;
 transition: 200ms !important;
 opacity: 1 !important;
 }
-@media (min-width: 768px) {
+@media (mex-width: 767px) {
 
 .header__container  .btn{
 border: 3px solid #29a24e !important;
